@@ -1,14 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
 
-    <TextView
-            android:id="@+id/tv"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Hello World!"/>
-
-</LinearLayout>
+    <RadioGroup
+            android:id="@+id/rg_group"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:layout_alignParentBottom="true"
+            android:layout_height="50dp">
+        <RadioButton
+                android:id="@+id/rb_home"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:button="@null"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:drawablePadding="3dp"
+                android:drawableTop="@mipmap/bg_home_selector"
+                android:textColor="@color/selector_d81b60_999999"
+                android:text="@string/home_text"/>
+        <RadioButton
+                android:id="@+id/rb_video"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:drawableTop="@drawable/bg_video_selector"
+                android:drawablePadding="3dp"
+                android:textColor="@color/selector_d81b60_999999"
+                android:text="@string/home_video"/>
+        <RadioButton
+                android:id="@+id/rb_me"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:drawableTop="@drawable/bg_profile_selector"
+                android:drawablePadding="3dp"
+                android:textColor="@color/selector_d81b60_999999"
+                android:text="@string/home_me"/>
+    </RadioGroup>
+</RelativeLayout>

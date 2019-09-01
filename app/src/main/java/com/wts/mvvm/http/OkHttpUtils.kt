@@ -7,7 +7,7 @@ import java.util.concurrent.TimeUnit
 
 /**
  * Create by wangtingshun 2019/8/24
- * describe
+ * describe 封装网络请求
  */
 
 class OkHttpUtils private constructor(){
