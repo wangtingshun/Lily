@@ -21,7 +21,7 @@
                 android:textSize="12sp"
                 android:gravity="center"
                 android:drawablePadding="3dp"
-                android:drawableTop="@mipmap/bg_home_selector"
+                android:drawableTop="@drawable/bg_home_selector"
                 android:textColor="@color/selector_d81b60_999999"
                 android:text="@string/home_text"/>
         <RadioButton
