@@ -1,10 +1,11 @@
-package com.wts.mvvm.view
+package com.wts.mvvm.view.activity
 
 import android.arch.lifecycle.Observer
 import android.arch.lifecycle.ViewModelProviders
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.Window
+import com.wts.mvvm.view.LoadingDialog
 import com.wts.mvvm.viewModel.BaseViewModel
 
 /**

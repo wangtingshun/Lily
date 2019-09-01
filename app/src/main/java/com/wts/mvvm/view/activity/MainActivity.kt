@@ -1,4 +1,4 @@
-package com.wts.mvvm.view
+package com.wts.mvvm.view.activity
 
 import com.wts.mvvm.R
 import com.wts.mvvm.model.MainModel
