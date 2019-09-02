@@ -21,5 +21,5 @@ class LoginActivity : BaseActivity<LoginModel>() {
     override fun getViewModel(): LoginModel {
       return LoginModel()
     }
-    
+
 }

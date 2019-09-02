@@ -45,4 +45,7 @@ abstract class BaseFragment<T : BaseViewModel>: Fragment(){
     private fun initData() {
 
     }
+
+    abstract fun getViewModel() : T
+
 }
