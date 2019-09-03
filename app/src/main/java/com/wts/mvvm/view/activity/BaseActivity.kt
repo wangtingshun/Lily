@@ -31,6 +31,7 @@ abstract class BaseActivity<T : BaseViewModel>: AppCompatActivity() {
         requestWindowFeature(Window.FEATURE_NO_TITLE)
         setContentView(getLayoutId())
         initViewModel()
+        initView()
         initData()
 
         initListener()
@@ -41,6 +42,10 @@ abstract class BaseActivity<T : BaseViewModel>: AppCompatActivity() {
      */
     abstract fun initData()
 
+    /**
+     * 初始化View
+     */
+    abstract fun initView()
 
     private fun initViewModel(){
            mViewModel = ViewModelProviders.of(this).get(getViewModel()::class.java)

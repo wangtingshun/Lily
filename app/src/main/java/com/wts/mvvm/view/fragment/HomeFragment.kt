@@ -20,12 +20,12 @@ class HomeFragment : BaseFragment<HomeModel>() {
 
 
     companion object{
-        fun newInstance(title: String?):HomeFragment{
+        fun newInstance(title: String?): HomeFragment {
             var bundle = Bundle()
-            bundle.putString(Constant.TITLE,title)
+            bundle.putString(Constant.TITLE, title)
             val fragment = HomeFragment()
             fragment.arguments = bundle
-            return  fragment
+            return fragment
         }
     }
 
