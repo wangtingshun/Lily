@@ -12,4 +12,7 @@ object Constant {
     const val HOME_PAGE = "home_page"
     const val VIDEO_PAGE = "video_page"
     const val PROFILE_PAGE = "profile_page"
+    const val HOME = "首页"
+    const val VIDEO = "视频"
+    const val PROFILE = "我的"
 }

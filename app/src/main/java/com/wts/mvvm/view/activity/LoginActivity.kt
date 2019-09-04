@@ -10,6 +10,12 @@ import com.wts.mvvm.model.LoginModel
 class LoginActivity : BaseActivity<LoginModel>() {
 
 
+
+    override fun initView() {
+        //
+    }
+
+
     override fun getLayoutId(): Int {
         return R.layout.activity_login
     }
