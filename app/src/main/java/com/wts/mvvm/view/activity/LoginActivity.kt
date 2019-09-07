@@ -17,7 +17,7 @@ class LoginActivity : BaseActivity<LoginModel>() {
 
 
     override fun getLayoutId(): Int {
-        return R.layout.activity_login
+        return R.layout.activity_login_layout
     }
 
     override fun initData() {

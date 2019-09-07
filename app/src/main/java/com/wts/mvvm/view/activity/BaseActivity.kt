@@ -21,10 +21,6 @@ abstract class BaseActivity<T : BaseViewModel>: AppCompatActivity() {
     var isRegisterEventBus = false
     var dataTrackPageMap: HashMap<String,String>? = null
 
-    /**
-     *layoutID 子类必须实现
-     */
-    abstract fun getLayoutId(): Int
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -36,6 +32,13 @@ abstract class BaseActivity<T : BaseViewModel>: AppCompatActivity() {
 
         initListener()
     }
+
+
+    /**
+     *layoutID 子类必须实现
+     */
+    abstract fun getLayoutId(): Int
+
 
     /**
      *初始化数据，子类必须实现
