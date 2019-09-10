@@ -1,8 +1,8 @@
 apply plugin: 'com.android.application'
 
 apply plugin: 'kotlin-android'
-
 apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
 
 android {
     compileSdkVersion 28
@@ -42,4 +42,6 @@ dependencies {
     implementation 'com.android.support:multidex:1.0.3'
 
     implementation 'org.greenrobot:eventbus:3.1.1'
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    kapt 'com.github.bumptech.glide:compiler:4.8.0'
 }
