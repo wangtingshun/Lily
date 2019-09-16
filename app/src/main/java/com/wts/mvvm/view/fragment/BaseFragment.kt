@@ -28,6 +28,7 @@ abstract class BaseFragment<T : BaseViewModel>: Fragment(){
         initListener()
     }
 
+
     private fun initViewModel() {
 
     }

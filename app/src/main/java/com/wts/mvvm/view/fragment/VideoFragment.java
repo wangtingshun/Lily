@@ -37,4 +37,5 @@ public class VideoFragment extends BaseFragment<VideoModel>{
     public void initData() {
 
     }
+
 }

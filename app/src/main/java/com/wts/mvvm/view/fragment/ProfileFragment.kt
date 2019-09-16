@@ -11,12 +11,12 @@ import com.wts.mvvm.model.ProfileModel
  */
 class ProfileFragment :BaseFragment<ProfileModel>() {
 
-
     override fun getViewModel(): ProfileModel = ProfileModel()
 
     override fun getLayoutId():Int {
         return R.layout.fragment_profile_layout
     }
+
 
     override fun initData() {
 
