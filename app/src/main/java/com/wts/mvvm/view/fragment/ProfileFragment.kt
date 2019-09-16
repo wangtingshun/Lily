@@ -18,6 +18,10 @@ class ProfileFragment :BaseFragment<ProfileModel>() {
         return R.layout.fragment_profile_layout
     }
 
+    override fun initData() {
+
+    }
+
     companion object {
         fun newInstance(title: String?): ProfileFragment {
             val bundle = Bundle()

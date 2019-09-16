@@ -33,4 +33,8 @@ public class VideoFragment extends BaseFragment<VideoModel>{
         return videoFragment;
     }
 
+    @Override
+    public void initData() {
+
+    }
 }

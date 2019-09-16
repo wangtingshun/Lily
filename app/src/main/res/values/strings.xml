@@ -4,5 +4,6 @@
     <string name="home_text">首页</string>
     <string name="home_video">视频</string>
     <string name="home_me">我的</string>
+    <string name="card_text">我是cardView</string>
 
 </resources>

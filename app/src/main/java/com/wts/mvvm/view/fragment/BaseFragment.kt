@@ -42,9 +42,8 @@ abstract class BaseFragment<T : BaseViewModel>: Fragment(){
     /**
      * 初始化数据
      */
-    private fun initData() {
+    abstract fun initData()
 
-    }
 
     abstract fun getViewModel() : T
 
