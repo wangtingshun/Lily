@@ -1,16 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
               android:orientation="vertical"
               android:layout_width="match_parent"
-              android:layout_height="match_parent"
+              android:layout_height="wrap_content"
               android:gravity="center_horizontal">
 
-    <TextView
-            android:id="@+id/tv_header"
+    <android.support.v7.widget.CardView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:textColor="@color/color_FF4040"
-            android:text="我是头部header"
-            android:textSize="16sp"/>
+            app:cardElevation="8dp"
+            app:cardCornerRadius="16dp">
+
+        <TextView
+                android:id="@+id/tv_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:textColor="@color/color_FF4040"
+                android:text="我是头部header"
+                android:textSize="16sp"/>
+    </android.support.v7.widget.CardView>
+
 </LinearLayout>

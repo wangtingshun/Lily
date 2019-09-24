@@ -59,11 +59,10 @@ class HomeAdapter(private val context:Context,private var data:MutableList<HomeB
                }
            }
            else ->{
-
                if (holder is RecyclerViewHolder){
                      holder?.textView?.text = data[position].itemName
                      holder.textView.setOnClickListener {
-                       Toast.makeText(context,"click",Toast.LENGTH_LONG).show()
+                       Toast.makeText(context,"click"+data[position].itemName,Toast.LENGTH_LONG).show()
                    }
                }
            }

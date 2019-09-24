@@ -22,6 +22,11 @@ class ProfileFragment :BaseFragment<ProfileModel>() {
 
     }
 
+
+    override fun initView() {
+        //
+    }
+
     companion object {
         fun newInstance(title: String?): ProfileFragment {
             val bundle = Bundle()

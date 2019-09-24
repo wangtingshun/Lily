@@ -2,7 +2,7 @@ package com.wts.mvvm.view.fragment
 
 import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
-import android.support.v7.widget.RecyclerView
+import android.support.v7.widget.StaggeredGridLayoutManager
 import com.wts.mvvm.R
 import com.wts.mvvm.adapter.HomeAdapter
 import com.wts.mvvm.bean.HomeBean
@@ -16,10 +16,8 @@ import kotlinx.android.synthetic.main.fragment_home_layout.*
  */
 class HomeFragment : BaseFragment<HomeModel>() {
 
-  //  private var recyclerView: RecyclerView? = null
     private var homeAdapter: HomeAdapter? = null
     private var dataList: MutableList<HomeBean>? = null
-    private var bean: HomeBean? = null
 
     override fun getLayoutId(): Int {
         return R.layout.fragment_home_layout
@@ -27,17 +25,22 @@ class HomeFragment : BaseFragment<HomeModel>() {
 
     override fun getViewModel():HomeModel = HomeModel()
 
-
     override fun initData() {
         dataList = arrayListOf()
-        for (index in 1..20) {
-            bean = HomeBean()
+        for (index in 1..10) {
+            var bean = HomeBean()
             bean?.itemName = "第" + index + "个条目"
             dataList?.add(bean!!)
         }
-        recyclerView?.layoutManager = LinearLayoutManager(activity,LinearLayoutManager.VERTICAL,false)
+ //       recyclerView?.layoutManager = LinearLayoutManager(context,LinearLayoutManager.VERTICAL,false)
+        recyclerView?.layoutManager = StaggeredGridLayoutManager(3,LinearLayoutManager.VERTICAL)
         homeAdapter = HomeAdapter(activity!!,dataList!!)
+        recyclerView?.isNestedScrollingEnabled = false
         recyclerView?.adapter = homeAdapter
+    }
+
+    override fun initView() {
+        //
     }
 
 

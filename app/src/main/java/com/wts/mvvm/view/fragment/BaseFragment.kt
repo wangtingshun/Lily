@@ -24,8 +24,8 @@ abstract class BaseFragment<T : BaseViewModel>: Fragment(){
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         initViewModel()
+        initView()
         initData()
-        initListener()
     }
 
 
@@ -34,16 +34,14 @@ abstract class BaseFragment<T : BaseViewModel>: Fragment(){
     }
 
     /**
-     * 初始化监听
-     */
-    private fun initListener() {
-
-    }
-
-    /**
      * 初始化数据
      */
     abstract fun initData()
+
+    /**
+     * 初始化View
+     */
+    abstract fun initView()
 
 
     abstract fun getViewModel() : T
