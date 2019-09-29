@@ -8,6 +8,7 @@ import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 import android.widget.FrameLayout;
 import com.wts.mvvm.VideoPlayerListener;
+import com.wts.mvvm.utils.ConfigUrl;
 import tv.danmaku.ijk.media.player.IMediaPlayer;
 import tv.danmaku.ijk.media.player.IjkMediaPlayer;
 import java.io.IOException;
@@ -44,7 +45,6 @@ public class VideoPlayerIjk extends FrameLayout {
 
     private void initVideoView(Context context) {
         this.mContext = context;
-        setFocusable(true);
     }
 
 
@@ -118,7 +118,6 @@ public class VideoPlayerIjk extends FrameLayout {
         }
     }
 
-
     public class LmnSurfaceCallBack implements SurfaceHolder.Callback{
 
         @Override
@@ -138,6 +137,9 @@ public class VideoPlayerIjk extends FrameLayout {
         }
     }
 
+    public String getVideoPath(){
+        return ConfigUrl.video_path;
+    }
 
     public void start(){
         if (mMediaPlayer != null){

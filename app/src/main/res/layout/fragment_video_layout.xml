@@ -8,19 +8,12 @@
 
     <com.wts.mvvm.video.VideoPlayerIjk
             android:id="@+id/ijk_player"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent">
     </com.wts.mvvm.video.VideoPlayerIjk>
-    <!--<android.support.design.widget.FloatingActionButton-->
-            <!--android:id="@+id/floating_button"-->
-            <!--android:layout_width="48dp"-->
-            <!--android:layout_height="48dp"-->
-            <!--android:layout_margin="16dp"-->
-            <!--android:onClick="onClick"-->
-            <!--app:layout_constraintBottom_toBottomOf="parent"-->
-            <!--app:layout_constraintRight_toRightOf="parent" />-->
+
 </android.support.constraint.ConstraintLayout>

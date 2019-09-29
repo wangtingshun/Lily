@@ -2,7 +2,6 @@ package com.wts.mvvm.view.fragment
 
 import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
-import android.support.v7.widget.StaggeredGridLayoutManager
 import com.wts.mvvm.R
 import com.wts.mvvm.adapter.HomeAdapter
 import com.wts.mvvm.bean.HomeBean
@@ -32,8 +31,8 @@ class HomeFragment : BaseFragment<HomeModel>() {
             bean?.itemName = "第" + index + "个条目"
             dataList?.add(bean!!)
         }
- //       recyclerView?.layoutManager = LinearLayoutManager(context,LinearLayoutManager.VERTICAL,false)
-        recyclerView?.layoutManager = StaggeredGridLayoutManager(3,LinearLayoutManager.VERTICAL)
+        recyclerView?.layoutManager = LinearLayoutManager(context,LinearLayoutManager.VERTICAL,false)
+ //       recyclerView?.layoutManager = StaggeredGridLayoutManager(3,LinearLayoutManager.VERTICAL)
         homeAdapter = HomeAdapter(activity!!,dataList!!)
         recyclerView?.isNestedScrollingEnabled = false
         recyclerView?.adapter = homeAdapter
