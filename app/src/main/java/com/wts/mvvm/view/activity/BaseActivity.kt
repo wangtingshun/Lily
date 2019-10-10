@@ -27,9 +27,8 @@ abstract class BaseActivity<T : BaseViewModel>: AppCompatActivity() {
         requestWindowFeature(Window.FEATURE_NO_TITLE)
         setContentView(getLayoutId())
         initViewModel()
-        initView()
         initData()
-
+        initView()
         initListener()
     }
 

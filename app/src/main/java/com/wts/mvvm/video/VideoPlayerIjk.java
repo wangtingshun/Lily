@@ -75,7 +75,6 @@ public class VideoPlayerIjk extends FrameLayout {
      *加载视频
      */
     private void load() {
-        //每次都要重新创建IMediaPlayer
         createPlayer();
         try {
             mMediaPlayer.setDataSource(mPath);
@@ -138,7 +137,7 @@ public class VideoPlayerIjk extends FrameLayout {
     }
 
     public String getVideoPath(){
-        return ConfigUrl.video_path;
+        return ConfigUrl.VIDEO_PATH;
     }
 
     public void start(){

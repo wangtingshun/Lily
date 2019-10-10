@@ -15,4 +15,5 @@ object Constant {
     const val HOME = "首页"
     const val VIDEO = "视频"
     const val PROFILE = "我的"
+    const val DATA = "data"
 }

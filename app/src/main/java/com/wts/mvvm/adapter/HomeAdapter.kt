@@ -1,6 +1,7 @@
 package com.wts.mvvm.adapter
 
 import android.content.Context
+import android.content.Intent
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
@@ -9,6 +10,8 @@ import android.widget.TextView
 import android.widget.Toast
 import com.wts.mvvm.R
 import com.wts.mvvm.bean.HomeBean
+import com.wts.mvvm.common.Constant
+import com.wts.mvvm.view.activity.DetailActivity
 
 /**
  * Create by wangtingshun 2019/9/15
@@ -62,7 +65,11 @@ class HomeAdapter(private val context:Context,private var data:MutableList<HomeB
                if (holder is RecyclerViewHolder){
                      holder?.textView?.text = data[position].itemName
                      holder.textView.setOnClickListener {
-                       Toast.makeText(context,"click"+data[position].itemName,Toast.LENGTH_LONG).show()
+                //       Toast.makeText(context,"click"+data[position].itemName,Toast.LENGTH_LONG).show()
+                         var intent = Intent()
+                         intent.setClass(context, DetailActivity::class.java)
+                         intent.putExtra(Constant.DATA, data[position].itemName)
+                         context.startActivity(intent)
                    }
                }
            }
